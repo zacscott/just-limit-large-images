@@ -15,7 +15,7 @@ class LimitImageSizeController {
 
     public function __construct() {
     
-        add_filter( 'wp_get_attachment_image_src', [ $this, 'limit_thumbnail_size' ], PHP_INT_MAX, 4 );
+        add_filter( 'wp_get_attachment_image_src', [ $this, 'limit_thumbnail_size' ], -1, 4 );
 
     }
 
